@@ -1,4 +1,7 @@
 FROM alpine:3.24
+
+RUN apk add --no-cache ca-certificates
+
 # Install pagefind_extended
 RUN set -eux; \
     PAGEFIND_EXTENDED_VERSION=v1.4.0; \
